@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHITS_py_search</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        input[type="text"] { width: 100%; padding: 10px; margin-top: 20px; }
+        button { padding: 10px 20px; margin-top: 20px; }
+        .result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PHITS_py_search</h1>
+        <input type="text" id="wordInput" placeholder="単語を入力してください">
+        <button onclick="searchWord()">検索</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        async function searchWord() {
+            const word = document.getElementById("wordInput").value;
+            const response = await fetch(`/api/search?word=${word}`);
+            const data = await response.json();
+            const resultDiv = document.getElementById("result");
+            if (data.found) {
+                resultDiv.innerHTML = `<p>${word}の解説: ${data.description}</p>`;
+            } else {
+                resultDiv.innerHTML = `<p>${word}の解説が見つかりません。</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

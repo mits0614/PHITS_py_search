@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phits>
+    <patterns>
+        <pattern>
+            <name>title</name>
+            <description>計算のタイトルを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>parameters</name>
+            <description>ヒストリー数など、計算の動作を決めるパラメータを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>source</name>
+            <description>入力ソース粒子の情報を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>material</name>
+            <description>体系を構成する物質を定義します。順序はMAT[物質番号]_元素_組成比_元素 組成比_...</description>
+        </pattern>
+        <pattern>
+            <name>surface</name>
+            <description>体系を構成する面を定義します。順序は、面番号_座標変換番号_面記号_面定義数値</description>
+        </pattern>
+        <pattern>
+            <name>cell</name>
+            <description>体系を構成するcellを定義します。順序は、セル番号_物質番号_物質密度_セル定義文_セルパラメータ</description>
+        </pattern>
+        <pattern>
+            <name>transform</name>
+            <description>体系を構成する面などの座標変換を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>temperature</name>
+            <description>cellの温度を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>mattimechange</name>
+            <description>物質の時間変化を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>magneticfield</name>
+            <description>体系を構成する領域の磁場を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>electromagneticfield</name>
+            <description>体系を構成する領域の電磁混合場を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>deltaray</name>
+            <description>δ線を発生させます。</description>
+        </pattern>
+        <pattern>
+            <name>trackstructure</name>
+            <description>飛跡構造解析モードを使用するための設定を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>supermirror</name>
+            <description>低エネルギー中性子のスーパーミラーを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>elasticoption</name>
+            <description>低エネルギー中性子の弾性衝突のオプションを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>datamax</name>
+            <description>核種毎に核データライブラリを利用する上限エネルギーを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>fragdata</name>
+            <description>ユーザー指定断面積読み込み機能について定義します。</description>
+        </pattern>
+        <pattern>
+            <name>importance</name>
+            <description>領域のimportanceを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>weightwindow</name>
+            <description>領域のweight windowを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>wwbias</name>
+            <description>[weight window]のパラメータにかけるバイアスを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>forcedcollisions</name>
+            <description>強制衝突の領域とファクターを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>repeatedcollisions</name>
+            <description>核反応の繰返し衝突の領域とファクターを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>volume</name>
+            <description>体系を構成する領域の体積を定義します。</description>
+        </pattern>
+        <pattern>
+            <name>multiplier</name>
+            <description>multiplierを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>matnamecolor</name>
+            <description>物質表示の名前、色、大きさを指定します。</description>
+        </pattern>
+        <pattern>
+            <name>regname</name>
+            <description>領域表示の名前、大きさを指定します。</description>
+        </pattern>
+        <pattern>
+            <name>counter</name>
+            <description>counterを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>timer</name>
+            <description>粒子の固有時間をリセット、ストップを定義します。</description>
+        </pattern>
+        <pattern>
+            <name>t-track</name>
+            <description>粒子の飛跡長 (track length) やフルエンスを導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-cross</name>
+            <description>粒子の面横断回数やフルエンスを導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-point</name>
+            <description>ある点や線上のフルエンスを導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-deposit</name>
+            <description>物質におけるエネルギー付与を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-deposit2</name>
+            <description>2つの領域でのエネルギー付与の相関を出力するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-heat</name>
+            <description>物質におけるエネルギー付与を導出するタリー。(非推奨)</description>
+        </pattern>
+        <pattern>
+            <name>t-yield</name>
+            <description>残留核の生成量を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-product</name>
+            <description>線源や核反応による生成粒子を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-dpa</name>
+            <description>原子あたりのはじき出し数 (DPA) を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-let</name>
+            <description>LETの関数として飛跡長や線量を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-sed</name>
+            <description>微小領域におけるエネルギー付与分布を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-time</name>
+            <description>Energy cut offとescape粒子の個数を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-interact</name>
+            <description>(従来の[t-star])反応数を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-dchain</name>
+            <description>DCHAIN用入力ファイルを作成するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-wwg</name>
+            <description>[weight window]のパラメータを出力するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-wwbg</name>
+            <description>[ww bias]のパラメータを出力するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-volume</name>
+            <description>体積自動計算機能のためのタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-userdefined</name>
+            <description>ユーザー定義による任意の物理量を導出するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-gshow</name>
+            <description>ジオメトリ(仮想空間)を2次元で表示するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-rshow</name>
+            <description>ジオメトリを2次元で物理量による色分けをして表示するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>t-3dshow</name>
+            <description>ジオメトリを3次元で表示するタリー。</description>
+        </pattern>
+        <pattern>
+            <name>end</name>
+            <description>入力ファイルの終了を示します。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=0</name>
+            <description>通常の粒子輸送計算。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=1</name>
+            <description>断面積・カーマファクター出力モード(/phits/sample/icntl1 参照)</description>
+        </pattern>
+        <pattern>
+            <name>icntl=3</name>
+            <description>inputechoの書き出し。メモリー空間、ライブラリー、ファイルのチェック用。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=5</name>
+            <description>全てを真空 (void)領域とし、粒子の反応や散乱、電離等が起こらない輸送計算を実行する。geometry checkや体積・面積計算の際に使用する。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=6</name>
+            <description>ソースのチェック。[t-product]で線源粒子をタリーできる。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=7</name>
+            <description>[t-gshow]タリーの実行。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=8</name>
+            <description>xyzメッシュタリーのgshowオプションのあるものの幾何形状表示。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=9</name>
+            <description>[t-rshow]タリーの実行。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=10</name>
+            <description>regメッシュタリーのrshowオプションのあるものの幾何形状表示。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=11</name>
+            <description>[t-3dshow](3次元幾何形状表示タリー)の実行。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=12</name>
+            <description>dumpallファイルから読み込んで再計算。file(15)で出力ファイルを指定。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=13</name>
+            <description>タリー結果の統合機能(Sumtally機能)の利用。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=14</name>
+            <description>体積自動計算機能の利用。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=15</name>
+            <description>[t-wwbg]タリーの実行。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=16</name>
+            <description>分析機能スクリプトの利用。</description>
+        </pattern>
+        <pattern>
+            <name>icntl=17</name>
+            <description>[anatally]セクションの実行。</description>
+        </pattern>
+    </patterns>
+    <sourceTypes>
+        <sourceType>
+            <name>1</name>
+            <description>円柱(円面、ペンシルビーム)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) 円柱の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) 円柱の中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) 円柱の z 軸方向の下限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) 円柱の z 軸方向の上限(円面の場合は下限と同じ)[cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r0</name>
+                    <description>(D=0.0) 円柱の半径(r0=0.0 のときペンシルビーム)[cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r1</name>
+                    <description>(D=0.0) 円柱の内半径 [cm]。中空部分を指定する。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>2</name>
+            <description>角柱(長方形)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) 角柱の下限の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>(D=0.0) 角柱の上限の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) 角柱の下限の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>(D=0.0) 角柱の上限の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) 角柱の下限の z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) 角柱の上限の z 座標(長方形の場合は下限と同じ)[cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>3</name>
+            <description>ガウス分布(x, y, z 独立)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) ガウス分布の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>(D=0.0) ガウス分布の x 方向の半値全幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) ガウス分布の中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>(D=0.0) ガウス分布の y 方向の半値全幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) ガウス分布の中心の z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) ガウス分布の z 方向の半値全幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>7</name>
+            <description>一般パラボラ分布 (x, y, z 独立)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) X パラボラ分布の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>(D=0.0) X パラボラ分布の幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) Y パラボラ分布中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>(D=0.0) Y パラボラ分布の幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) Z パラボラ分布の中心の z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) Z パラボラ分布の幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>rn</name>
+                    <description>(D=2) 一般パラボラの次数。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>9</name>
+            <description>球及び球殻分布。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) 球及び球殻分布の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) 球及び球殻分布の中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) 球及び球殻分布の中心の z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r1</name>
+                    <description>(D=0.0) 球及び球殻分布の内半径 [cm]。ゼロの場合は球。</description>
+                </parameter>
+                <parameter>
+                    <name>r2</name>
+                    <description>(D=0.0) 球及び球殻分布の外半径 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の方向。</description>
+                </parameter>
+                <parameter>
+                    <name>ag1</name>
+                    <description>(D=-1.0) dir=iso の場合の天頂角カットオフ最小値。</description>
+                </parameter>
+                <parameter>
+                    <name>ag2</name>
+                    <description>(D=1.0) dir=iso の場合の天頂角カットオフ最大値。</description>
+                </parameter>
+                <parameter>
+                    <name>pg1</name>
+                    <description>(D=0.0) dir=iso の場合の方位角カットオフ最小値 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>pg2</name>
+                    <description>(D=360.0) dir=iso の場合の方位角カットオフ最大値 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>isbias</name>
+                    <description>(D=0) ag1, ag2, pg1, pg2 を使って角度範囲を指定した際、カットオフされた粒子の処理方法。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>11</name>
+            <description>位相空間線源。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) ビーム中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) ビーム中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) z 軸方向の下限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) z 軸方向の上限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>rx</name>
+                    <description>(D=0.0) x 方向における位相空間の楕円の傾き [rad]。</description>
+                </parameter>
+                <parameter>
+                    <name>ry</name>
+                    <description>(D=0.0) y 方向における位相空間の楕円の傾き [rad]。</description>
+                </parameter>
+                <parameter>
+                    <name>wem</name>
+                    <description>(D=0.0) 位相空間からのサンプリング方法。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>(D=0.0) x 方向の最大半径/最大角度の比 [cm/mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>(D=0.0) y 方向の最大半径/最大角度の比 [cm/mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>xmrad1</name>
+                    <description>(D=0.0) rx=0 における x 方向角度のガウス分布標準偏差 [mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>ymrad1</name>
+                    <description>(D=0.0) ry=0 における y 方向角度のガウス分布標準偏差 [mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>x2</name>
+                    <description>(D=0.0) x 方向の位相空間中心 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y2</name>
+                    <description>(D=0.0) y 方向の位相空間中心 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>xmrad2</name>
+                    <description>(D=0.0) x 方向角度の位相空間中心 [mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>ymrad2</name>
+                    <description>(D=0.0) y 方向角度の位相空間中心 [mrad]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1) 入射粒子の軸方向の方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>12</name>
+            <description>decay-turtleの出力を読み込む。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) ビームの x 座標のオフセット [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) ビームの y 座標のオフセット [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) ビームの z 座標のオフセット [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1) 入射粒子の軸方向の方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>file</name>
+                    <description>decay-turtle 出力ファイル名(パスも含む)。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>13</name>
+            <description>ガウス分布(xy平面)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) ガウス分布の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) ガウス分布の中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r1</name>
+                    <description>(D=0.0) ガウス分布の半値全幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) z軸方向の下限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=z0) z軸方向の上限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子のz軸方向からの方向余弦。allを指定した時は、等方分布。dataを指定した時は、a-typeサブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0から360の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1; cos^2のbiasがかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>15</name>
+            <description>一般パラボラ分布 (xy 平面)。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) パラボラ分布の中心の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) パラボラ分布の中心の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r1</name>
+                    <description>(D=0.0) パラボラ分布の幅 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) z 軸方向の下限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=z0) z 軸方向の上限 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>rn</name>
+                    <description>(D=2) 一般パラボラの次数。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>(単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>17</name>
+            <description>Dump data 線源(dump ファイルの読み込み)。</description>
+            <parameters>
+                <parameter>
+                    <name>file</name>
+                    <description>dump ファイル名(パスも含む)。</description>
+                </parameter>
+                <parameter>
+                    <name>dump</name>
+                    <description>dump データの個数。負で与えた時はアスキーファイル。</description>
+                </parameter>
+                <parameter>
+                    <name>jpsf</name>
+                    <description>Phase space file 用の特別オプション。z0 の指定が必要。=1 は変換時に weight 無しの場合。</description>
+                </parameter>
+                <parameter>
+                    <name>x0</name>
+                    <description>下限 x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>上限 x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>下限 y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>上限 y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>下限 z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>上限 z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>sx</name>
+                    <description>スピンの方向ベクトルの x 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>sy</name>
+                    <description>スピンの方向ベクトルの y 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>sz</name>
+                    <description>スピンの方向ベクトルの z 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>入射粒子の z 軸方向からの方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>入射粒子の方位角 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>入射粒子方向の立体角範囲 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>wgt</name>
+                    <description>(D=1.0) ソース粒子のウエイト。</description>
+                </parameter>
+                <parameter>
+                    <name>factor</name>
+                    <description>(D=1.0) ソース粒子のウエイトの規格化定数。</description>
+                </parameter>
+                <parameter>
+                    <name>t-type</name>
+                    <description>(D=0) 時間分布。</description>
+                </parameter>
+                <parameter>
+                    <name>reg</name>
+                    <description>(D=all) 領域を限定する。</description>
+                </parameter>
+                <parameter>
+                    <name>ntmax</name>
+                    <description>(D=1000) 領域限定の際の最大再試行回数。</description>
+                </parameter>
+                <parameter>
+                    <name>trcl</name>
+                    <description>(D=なし) 座標変換番号もしくは座標変換定義。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>18</name>
+            <description>円錐形状。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>(D=0.0) 円錐の頂点の x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>(D=0.0) 円錐の頂点の y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>(D=0.0) 円錐の頂点の z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>(D=0.0) 円錐頂点から底面中心に向けたベクトルの x 成分 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>(D=0.0) 円錐頂点から底面中心に向けたベクトルの y 成分 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>(D=0.0) 円錐頂点から底面中心に向けたベクトルの z 成分 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r0</name>
+                    <description>(D=0.0) 頂点から円錐上面までの軸上における距離 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r1</name>
+                    <description>(D=0.0) 頂点から円錐下面までの軸上における距離 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>r2</name>
+                    <description>(D=0.0) 円錐の母線と軸のなす角度 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>24</name>
+            <description>連続四面体線源。</description>
+            <parameters>
+                <parameter>
+                    <name>tetreg</name>
+                    <description>四面体が属する universe のセル番号。1 つしか指定できない。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>26</name>
+            <description>面上分布。面線源。</description>
+            <parameters>
+                <parameter>
+                    <name>suf</name>
+                    <description>粒子を発生させる面番号。[surface] セクションで定義した面番号で指定します。指定できる面の種類は PX, PY, PZ, SO, S, SX, SY, SZ, C/X, C/Y, C/Z, CX, CY, CZ で、2 つ以上の面は指定できません。</description>
+                </parameter>
+                <parameter>
+                    <name>cut</name>
+                    <description>粒子を発生する面上の領域を制限します。[surface] セクションで定義した面番号に符号を付けて指定します。複数の面番号を指定することができますが、球や円柱は合わせて1つしか定義することができません。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 線源の発生位置での面の法線からの方向余弦。all を指定した時は、等方分布。data を指定した時は、a-type サブセクションが必要。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>(D=all) 入射粒子の方位角 [degree]。= all; 0 から 360 の範囲でランダムに決定。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>(D=0.0) 入射粒子方向の立体角範囲 [degree]。= -1 ; cos^2 の bias がかかった分布。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>(単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+        <sourceType>
+            <name>100</name>
+            <description>ユーザー定義のソースプログラム。usrsors.f にプログラムを書き込みコンパイルする。</description>
+            <parameters>
+                <parameter>
+                    <name>x0</name>
+                    <description>下限 x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>x1</name>
+                    <description>上限 x 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y0</name>
+                    <description>下限 y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>y1</name>
+                    <description>上限 y 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z0</name>
+                    <description>下限 z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>z1</name>
+                    <description>上限 z 座標 [cm]。</description>
+                </parameter>
+                <parameter>
+                    <name>sx</name>
+                    <description>スピンの方向ベクトルの x 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>sy</name>
+                    <description>スピンの方向ベクトルの y 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>sz</name>
+                    <description>スピンの方向ベクトルの z 成分。</description>
+                </parameter>
+                <parameter>
+                    <name>dir</name>
+                    <description>(D=1.0) 入射粒子の z 軸方向からの方向余弦。</description>
+                </parameter>
+                <parameter>
+                    <name>phi</name>
+                    <description>入射粒子の方位角 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>dom</name>
+                    <description>入射粒子方向の立体角範囲 [degree]。</description>
+                </parameter>
+                <parameter>
+                    <name>e0</name>
+                    <description>(単色の場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>e-type</name>
+                    <description>(分布を持つ場合)入射粒子のエネルギー [MeV/n]。</description>
+                </parameter>
+                <parameter>
+                    <name>wgt</name>
+                    <description>(D=1.0) ソース粒子のウエイト。</description>
+                </parameter>
+                <parameter>
+                    <name>factor</name>
+                    <description>(D=1.0) ソース粒子のウエイトの規格化定数。</description>
+                </parameter>
+                <parameter>
+                    <name>t-type</name>
+                    <description>(D=0) 時間分布。</description>
+                </parameter>
+                <parameter>
+                    <name>reg</name>
+                    <description>(D=all) 領域を限定する。</description>
+                </parameter>
+                <parameter>
+                    <name>ntmax</name>
+                    <description>(D=1000) 領域限定の際の最大再試行回数。</description>
+                </parameter>
+                <parameter>
+                    <name>trcl</name>
+                    <description>(D=なし) 座標変換番号もしくは座標変換定義。</description>
+                </parameter>
+            </parameters>
+        </sourceType>
+    </sourceTypes>
+    <keywords>
+        <keyword>
+            <name>maxcass</name>
+            <description>最大ヒストリー数</description>
+        </keyword>
+        <keyword>
+            <name>maxbch</name>
+            <description>最大バッチ数。バッチ分散の場合、maxbch を大きくした方が計算の信頼性が高くなります。ただし、計算時間が長くなる可能性があるため注意が必要です。ヒストリー分散モードでは標準誤差は全ヒストリー数のみに依存します。</description>
+        </keyword>
+        <keyword>
+            <name>mesh</name>
+            <description>形状メッシュ</description>
+        </keyword>
+        <keyword>
+            <name>volumeDefinition</name>
+            <description>volume 定義文。</description>
+        </keyword>
+        <keyword>
+            <name>-type</name>
+            <description>type1: 群数、分点をデータで与える。type2: 群数と最小値、最大値を与え、線形で等分点が与えられる。type3: 群数と最小値、最大値を与え、対数で等分点が与えられる。type4: メッシュ幅と最小値、最大値を与え、線形で等分点が与えられる。type5: 最小値、最大値、メッシュ幅の対数値を与え、対数で等分点が与えられる。</description>
+        </keyword>
+        <keyword>
+            <name>axis</name>
+            <description>出力するデータのx軸を決定する。xy,yz,xz,rz,t(時間軸)で2次元表示も可能。</description>
+        </keyword>
+        <keyword>
+            <name>file</name>
+            <description>出力するファイル名。</description>
+        </keyword>
+        <keyword>
+            <name>title</name>
+            <description>出力ファイルヘッダーのタイトル。</description>
+        </keyword>
+        <keyword>
+            <name>gshow</name>
+            <description>領域境界、物質番号、領域番号、LAT番号を表示。gshow=5 でピクセル形式で物質色を表示。</description>
+        </keyword>
+        <keyword>
+            <name>epsout</name>
+            <description>1でANGELで処理したepsファイルを作成。2で誤差棒を表示。</description>
+        </keyword>
+        <keyword>
+            <name>unit=1</name>
+            <description>[1/cm^2/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=2</name>
+            <description>[1/cm^2/MeV/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=3</name>
+            <description>[1/cm^2/Lethargy/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=4</name>
+            <description>[cm/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=11</name>
+            <description>[1/cm^2 /nsec/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=12</name>
+            <description>[1/cm^2 /nsec/MeV/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=13</name>
+            <description>[1/cm^2 /Lethargy/nsec/source]</description>
+        </keyword>
+        <keyword>
+            <name>unit=14</name>
+            <description>[cm/nsec/source]</description>
+        </keyword>
+    </keywords>
+</phits>
