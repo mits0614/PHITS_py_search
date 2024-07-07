@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import xml.etree.ElementTree as ET
 import re
 
 app = Flask(__name__)
+CORS(app)
 
 # XMLをパースして辞書を作成する関数
 def parse_xml_to_dict(xml_file):
